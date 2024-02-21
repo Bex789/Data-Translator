@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <!--Nav bar code-->
+    <div class="topNav" id="topNav">
+        <a class="active" href="#home">Fiserv</a>
+        <input id="searchBar" type="text" placeholder="Search">
+        <a href="#applications">Applications</a>
+        <a href="#contact">Favorites</a>
+        <div class="topNavRight" id="topNavRight">
+            <div class="dropDown" id="dropDown">
+                <button class="dropBtn" id="dropBtn">
+                    FS1
+                    <div class="dropContent" id="dropContent">
+                        <a class="link" href="#">Link 1</a>
+                        <a class="link" href="#">Link 2</a>
+                        <a class="link" href="#">Link 3</a>
+                    </div>
+                </button>
+            </div>
+            <a href="#DEVD">DEVD</a>
+            <a href="#Account">0000REBECCA</a>
+        </div>
+    </div>
+    <!--End of nav bar code-->
+
+    <!--input box & all attached elements-->
+    <div class="text" id="text1">
+        <div style="min-width: 25%; text-align: left;">
+        <h1 class="lables" style="padding-right: 23%;">Input</h1>
+        <!--checkbox's for options-->
+        <input type="checkbox" id="inText" class="inputSelect" name="inText" value="Text" checked="true">
+        <!--label's for options-->
+        <label for="inText"> Text </label>
+        <input type="checkbox" id="inBinary" class="inputSelect" name="inBinary" value="Binary">
+        <label for="inBinary"> Binary </label>
+        <input type="checkbox" id="inHex" class="inputSelect" name="inHex" value="Hex">
+        <label for="inHex"> Hex </label>
+        <input type="checkbox" id="inAscii" class="inputSelect" name="inAscii" value="Ascii">
+        <label for="inAscii"> Ascii </label><br>
+        </div>
+        <textarea name="inputArea" id="inputArea" class="textArea"></textarea>
+    </div>
+    <div class="buttonArea"><!--buttons needed for the software to work-->
+        <!--<br><br>     Lowers buttons-->
+        <button class="buttons" id="subBtn" onclick="submitted()">Submit</button>
+        <button class="buttons" id="clearBtn" onclick="clearBtn()">Clear</button>
+    </div>
+
+    <!--input box & all attached elements-->
+    <div class="text" id="text2">
+        <div style="min-width: 25%; text-align: left;">
+        <h1 class="lables" style="padding-right: 21%;">Output</h1>
+        <!--checkbox's for options-->
+        <input type="checkbox" id="outText" class="outputSelect" name="outText" value="Text">
+        <!--label's for options-->
+        <label for="outText"> Text </label>
+        <input type="checkbox" id="outBinary" class="outputSelect" name="outBinary" value="Binary">
+        <label for="outBinary"> Binary </label>
+        <input type="checkbox" id="outHex" class="outputSelect" name="outHex" value="Hex">
+        <label for="outHex"> Hex </label>
+        <input type="checkbox" id="outAscii" class="outputSelect" name="outAscii" value="Ascii">
+        <label for="outAscii"> Ascii </label>
+        <input type="checkbox" id="outAll" class="outputSelect" name="outAll" value="All">
+        <label for="outAll"> All </label><br>
+        </div>
+        <textarea name="outputArea" id="outputArea" class="textArea"></textarea>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
